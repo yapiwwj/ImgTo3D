@@ -1,0 +1,82 @@
+.container {
+  overflow-x: hidden;
+
+  header {
+    width: 90%;
+    margin: 0 auto;
+    h1 {
+      font-size: 50px;
+      font-weight: 500;
+      letter-spacing: 5px;
+    }
+
+    p {
+      width: 60%;
+      padding: 20px 0;
+    }
+  }
+
+  .card-container {
+    width: 100%;
+    margin: 0 auto;
+    ul {
+      display: flex;
+      width: calc(400px * 10);
+      animation: transformAnimation 80s linear infinite;
+
+      @keyframes transformAnimation {
+        0% {
+          transform: translateX(0);
+        }
+        50% {
+          transform: translateX(calc(-500px * 4));
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+
+      &:hover {
+        animation-play-state: paused;
+      }
+
+      li {
+        position: relative;
+        width: var(--width);
+        background: var(--background-color);
+        border-radius: 16px;
+        margin: 20px 5px 100px 5px;
+        cursor: pointer;
+        header {
+          display: flex;
+          align-items: center;
+          padding: 10px;
+
+          img {
+            width: 50px;
+          }
+
+          span {
+            padding: 0 10px;
+          }
+        }
+
+        p {
+          padding: 10px 30px;
+        }
+        footer {
+          padding: 10px 30px;
+          img {
+            width: 100%;
+          }
+        }
+      }
+      li:nth-child(odd) {
+        box-shadow: calc(var(--width) + 80px) -50px 80px var(--background-color);
+      }
+      li:nth-child(even) {
+        box-shadow: calc(var(--width) + 80px) 20px 80px var(--background-color);
+      }
+    }
+  }
+}

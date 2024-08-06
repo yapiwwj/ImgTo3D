@@ -1,0 +1,82 @@
+.container {
+  position: relative;
+  height: 100vh;
+
+  .background-container {
+    .background-box {
+      z-index: -1;
+      position: absolute;
+      top: 50%;
+      right: 100px;
+      width: calc(100% - 500px);
+      height: calc(100% - 200px);
+      background-image: url("@/assets/images/toThreeBackground.png");
+      background-size: 100% 100%;
+      object-fit: cover;
+      transform: translateY(-50%);
+      filter: blur(30px);
+      opacity: 0.5;
+    }
+  }
+
+  .body-container {
+    z-index: 2;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+
+    .left {
+      width: 55%;
+      height: 100%;
+
+      img {
+        width: 100%;
+        animation: opacityAnimation;
+      }
+    }
+
+    .right {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: baseline;
+      padding: 0 30px;
+
+      .top {
+        h1 {
+          font-size: 50px;
+          font-weight: 500;
+          letter-spacing: 5px;
+        }
+
+        p {
+          width: 580px;
+          padding: 20px 0;
+        }
+      }
+
+      .bottom {
+        margin-top: 100px;
+
+        .button-box {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 150px;
+          background: #007aff;
+          border-radius: 16px;
+          padding: 15px 20px;
+          cursor: pointer;
+          li:nth-child(1) {
+            color: #ffffff;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}

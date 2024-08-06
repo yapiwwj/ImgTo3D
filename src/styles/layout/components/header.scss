@@ -1,0 +1,112 @@
+.header {
+  header {
+    position: relative;
+    width: 100%;
+    height: $header-height;
+
+    ul {
+      position: absolute;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      li {
+        span {
+          font-size: $text-font-middle-size;
+        }
+      }
+    }
+    ul:nth-child(1) {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: $header-background-color;
+      border: 1px solid $header-background-active-color;
+      border-radius: 32px;
+      padding: 15px 10px;
+      backdrop-filter: blur(10px);
+      li {
+        span {
+          cursor: pointer;
+          padding: 5px 30px;
+        }
+        &:hover span {
+          border-radius: 16px;
+          background: $header-background-active-color;
+        }
+      }
+    }
+    ul:nth-child(2) {
+      display: flex;
+      align-items: center;
+      top: 50%;
+      right: 50px;
+      transform: translate(10%, -50%);
+      font-size: $text-font-small-size;
+      padding: 10px 0;
+
+      li:nth-child(1) {
+        padding: 5px 20px;
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    header {
+      position: relative;
+      width: 100%;
+      height: $header-height;
+
+      ul {
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        li {
+          margin: 0 0;
+
+          a {
+            color: $color-text-active;
+            text-decoration: none;
+          }
+
+          .router-link-active {
+            color: $color-text-active;
+            text-decoration: none;
+          }
+        }
+      }
+
+      ul:nth-child(1) {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 300px;
+        background: $header-background-color;
+        border: 1px solid $header-background-active-color;
+        border-radius: 32px;
+        padding: 10px 5px;
+        backdrop-filter: blur(10px);
+
+        li {
+          span {
+            font-size: 13px;
+            padding: 5px 5px;
+          }
+
+          &:hover span {
+            border-radius: 32px;
+            background: $header-background-active-color;
+          }
+        }
+      }
+
+      ul:nth-child(2) {
+        display: none;
+      }
+    }
+  }
+}

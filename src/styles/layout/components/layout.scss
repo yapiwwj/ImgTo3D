@@ -1,0 +1,455 @@
+div {
+  height: 100vh;
+  .background-box {
+    position: relative;
+    height: 280px;
+    .background-box1 {
+      z-index: -10;
+      position: absolute;
+      top: 0;
+      left: 20px;
+      width: 800px;
+      height: 600px;
+      background-image: url("../../../assets/images/background-logo1.svg");
+      background-repeat: no-repeat;
+      filter: blur(50px);
+      animation: logo1 5s linear infinite;
+    }
+
+    @keyframes logo1 {
+      0% {
+        transform: translateX(0) translateY(0);
+      }
+      50% {
+        transform: translateX(100px) translateY(200px);
+      }
+      100% {
+        transform: translateX(0) translateY(0);
+      }
+    }
+
+    .background-box2 {
+      z-index: -10;
+      position: absolute;
+      top: 130px;
+      right: 0;
+      width: 800px;
+      height: 800px;
+      background-image: url("../../../assets/images/background-logo2.svg");
+      background-repeat: no-repeat;
+      background-size: 90%;
+      filter: blur(50px);
+    }
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    h1 {
+      display: flex;
+      font-size: 120px;
+      font-family: "Courier New", Courier, monospace;
+      font-weight: 500;
+      letter-spacing: 5px;
+      animation: title 1s ease-in-out forwards;
+      opacity: 0;
+      @keyframes title {
+        0% {
+          transform: translateY(100px);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .subtitle {
+    all: initial;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+
+    h1 {
+      z-index: 10;
+      font-size: 55px;
+      font-weight: 400;
+      letter-spacing: 15px;
+      animation: subtitle 1s ease-in-out 1s forwards;
+      opacity: 0;
+      @keyframes subtitle {
+        0% {
+          transform: translateY(100px);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+    }
+
+    .introduce {
+      z-index: 10;
+      font-size: 14px;
+      padding-top: 30px;
+      animation: introduce 1s ease-in-out 2s forwards;
+      opacity: 0;
+      @keyframes introduce {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    }
+
+    div {
+      all: initial;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 150px 0;
+      animation: arrow 1s ease-in-out 3s forwards;
+      opacity: 0;
+      @keyframes arrow {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      img {
+        color: #6b6b6a;
+        width: 15px;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  div {
+    height: 100vh;
+    .background-box {
+      position: relative;
+      height: 120px;
+
+      .background-box1 {
+        z-index: -10;
+        position: absolute;
+        top: 0;
+        left: 20px;
+        width: 800px;
+        height: 600px;
+        background-image: url("../../../assets/images/background-logo1.svg");
+        background-repeat: no-repeat;
+        filter: blur(50px);
+        animation: logo1 5s linear infinite;
+      }
+
+      @keyframes logo1 {
+        0% {
+          transform: translateX(0) translateY(0);
+        }
+        50% {
+          transform: translateX(100px) translateY(200px);
+        }
+        100% {
+          transform: translateX(0) translateY(0);
+        }
+      }
+
+      .background-box2 {
+        z-index: -10;
+        position: absolute;
+        top: 130px;
+        right: 0;
+        width: 800px;
+        height: 800px;
+        background-image: url("../../../assets/images/background-logo2.svg");
+        background-repeat: no-repeat;
+        background-size: 90%;
+        filter: blur(50px);
+      }
+    }
+
+    header {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      h1 {
+        font-size: 80px;
+        font-family: "Courier New", Courier, monospace;
+        font-weight: 500;
+        letter-spacing: 5px;
+        animation: title 1s ease-in-out forwards;
+        opacity: 0;
+        @keyframes title {
+          0% {
+            transform: translateY(100px);
+            opacity: 0;
+          }
+          100% {
+            transform: translateY(0);
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    .subtitle {
+      all: initial;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 30px;
+
+      h1 {
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+        font-weight: 400;
+        letter-spacing: 10px;
+        animation: subtitle 1s ease-in-out 1s forwards;
+        opacity: 0;
+        @keyframes subtitle {
+          0% {
+            transform: translateY(100px);
+            opacity: 0;
+          }
+          100% {
+            transform: translateY(0);
+            opacity: 1;
+          }
+        }
+        span {
+          padding-bottom: 10px;
+        }
+      }
+
+      .introduce {
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        padding: 30px 20px 0 20px;
+        animation: introduce 1s ease-in-out 2s forwards;
+        opacity: 0;
+        @keyframes introduce {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+        span {
+          padding-bottom: 10px;
+        }
+      }
+
+      .explore {
+        font-size: 20px;
+        letter-spacing: 8px;
+        margin: 80px 0;
+        animation: explore 1s ease-in-out 3s forwards;
+        opacity: 0;
+        @keyframes explore {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+      }
+      div {
+        all: initial;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        animation: arrow 1s ease-in-out 3s forwards;
+        opacity: 0;
+        @keyframes arrow {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+        img {
+          color: #6b6b6a;
+          width: 15px;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 375px) {
+  div {
+    height: 100vh;
+    .background-box {
+      position: relative;
+      height: 100px;
+
+      .background-box1 {
+        z-index: -10;
+        position: absolute;
+        top: 0;
+        left: 20px;
+        width: 800px;
+        height: 600px;
+        background-image: url("../../../assets/images/background-logo1.svg");
+        background-repeat: no-repeat;
+        filter: blur(50px);
+        animation: logo1 5s linear infinite;
+      }
+
+      @keyframes logo1 {
+        0% {
+          transform: translateX(0) translateY(0);
+        }
+        50% {
+          transform: translateX(100px) translateY(200px);
+        }
+        100% {
+          transform: translateX(0) translateY(0);
+        }
+      }
+
+      .background-box2 {
+        z-index: -10;
+        position: absolute;
+        top: 130px;
+        right: 0;
+        width: 800px;
+        height: 800px;
+        background-image: url("../../../assets/images/background-logo2.svg");
+        background-repeat: no-repeat;
+        background-size: 90%;
+        filter: blur(50px);
+      }
+    }
+
+    header {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      h1 {
+        font-size: 75px;
+        font-family: "Courier New", Courier, monospace;
+        font-weight: 500;
+        letter-spacing: 5px;
+        animation: title 1s ease-in-out forwards;
+        opacity: 0;
+        @keyframes title {
+          0% {
+            transform: translateY(100px);
+            opacity: 0;
+          }
+          100% {
+            transform: translateY(0);
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    .subtitle {
+      all: initial;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 30px;
+
+      h1 {
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+        font-weight: 400;
+        letter-spacing: 10px;
+        animation: subtitle 1s ease-in-out 1s forwards;
+        opacity: 0;
+        @keyframes subtitle {
+          0% {
+            transform: translateY(100px);
+            opacity: 0;
+          }
+          100% {
+            transform: translateY(0);
+            opacity: 1;
+          }
+        }
+        span {
+          padding-bottom: 5px;
+        }
+      }
+
+      .introduce {
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        padding: 30px 20px 0 20px;
+        animation: introduce 1s ease-in-out 2s forwards;
+        opacity: 0;
+        @keyframes introduce {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+        span {
+          padding-bottom: 5px;
+        }
+      }
+
+      .explore {
+        font-size: 20px;
+        letter-spacing: 8px;
+        margin: 80px 0;
+        animation: explore 1s ease-in-out 3s forwards;
+        opacity: 0;
+        @keyframes explore {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+      }
+      div {
+        display: none;
+      }
+    }
+  }
+}
