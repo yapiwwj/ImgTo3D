@@ -1,39 +1,36 @@
 :root[theme="light"] {
   //public
-  --border-line-color:#c3c3c3;
-
+  --border-line-color: #c3c3c3;
+  --font-color1: #000;
+  --font-color2: #000;
+  --background:#fff;
   //header
-  --header-title:#000;
+  --header-title: #000;
   --header-background-color: #ffffff;
-
   //aside
   --aside-background-color: #ffffff;
   --aside-border-line-color: #c3c3c3;
   --aside-text-color: #000000;
   --aside-active-color: #e5f9ff;
-  --aside-active-text-color:#000;
-
-  --text-color: #eee;
-  --anchor-color: #ccc;
+  --aside-active-text-color: #000;
 }
 
 
 /* 黑色模式变量 dark */
 :root[theme="dark"] {
   //public
-  --border-line-color:#0c0b10;
-
+  --border-line-color: #0c0b10;
+  --font-color1: #c4f1ff;
+  --font-color2: #c1c2c5;
+  --background:#0c0b10;
   //header
-  --header-title:#c4f1ff;
+  --header-title: #c4f1ff;
   --header-background-color: #0c0b10;
-
-//aside
+  //aside
   --aside-background-color: #0c0b10;
   --aside-border-line-color: #c4f1ff;
   --aside-text-color: #c1c2c5;
   --aside-active-color: #1c1d29;
-  --aside-active-text-color:#c4f1ff;
+  --aside-active-text-color: #c4f1ff;
 
-  --text-color: #eee;
-  --anchor-color: #ccc;
 }

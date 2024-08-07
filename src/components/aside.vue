@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import { ref } from "vue";
+import { useRouter } from "vue-router";
+
+const router = useRouter();
 
 const activeIndex = ref(0);
 const asideList = ref([
@@ -14,7 +17,7 @@ const asideList = ref([
       id: 1,
       name: "我的资产",
       icon: "Coin",
-      path: "/home",
+      path: "/home/assets",
     },
   ],
   [
@@ -22,13 +25,13 @@ const asideList = ref([
       id: 2,
       name: "Text to 3D",
       icon: "Box",
-      path: "/home",
+      path: "/test",
     },
     {
       id: 3,
       name: "Text to Img",
       icon: "Picture",
-      path: "/home",
+      path: "/test",
     },
     {
       id: 4,
@@ -53,6 +56,7 @@ const asideList = ref([
 
 const handleActive = (id: number) => {
   activeIndex.value = id;
+  id <= 1 ? router.push(asideList.value[0][id].path) : router.push(asideList.value[1][id - 2].path);
 };
 </script>
 

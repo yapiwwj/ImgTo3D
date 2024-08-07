@@ -19,9 +19,7 @@ onMounted(() => {
          <Aside />
         </el-aside>
         <el-main>
-          <ul>
-            <li v-for="i in 100" :key="i">{{ i }}</li>
-          </ul>
+        <router-view></router-view>
         </el-main>
       </el-container>
     </el-container>
