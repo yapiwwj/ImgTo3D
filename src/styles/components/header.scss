@@ -1,74 +1,72 @@
-.container{
+.container {
   height: $header-height;
-ul{
-  display: flex;
-  justify-content: space-between;
-  height: 100%;
-  li{
+  ul {
     display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .left{
-    .el-icon{
-      color: var(--header-title);
-      padding: 0 20px;
-    }
-    h1{
-      font-family: "Courier New", Courier, monospace;
-      font-weight: 500;
-      color: var(--header-title);
-      letter-spacing: 5px;
-    }
-  }
-  .right{
-   .publish{
-     display: flex;
-     align-items: center;
-     cursor: pointer;
-     .el-icon{
-       color: var(--header-title);
-       padding: 0 5px;
-     }
-     p{
-       font-size: $header-font-size;
-       color: var(--header-title);
-     }
-   }
-    button{
+    justify-content: space-between;
+    height: 100%;
+    li {
       display: flex;
       justify-content: center;
       align-items: center;
-      color: var(--header-title);
-      text-decoration: none;
-      text-underline: none;
-      border: 1px solid var(--header-title);
-      background: transparent;
-      border-radius: 18px;
-      padding:  5px 20px;
-      margin: 0 20px;
-      cursor: pointer;
-      .el-icon{
-        padding-right: 10px;
-      }
     }
-    footer{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-left: 1px solid var(--header-title);
-      .el-icon{
+    .left {
+      .el-icon {
         color: var(--header-title);
         padding: 0 20px;
-        cursor: pointer;
       }
-      .el-avatar{
-        margin-right: 20px;
-        cursor: pointer;
+      h1 {
+        font-family: "Courier New", Courier, monospace;
+        font-weight: 500;
+        color: var(--header-title);
+        letter-spacing: 5px;
       }
-
     }
-
+    .right {
+      .publish {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        .el-icon {
+          color: var(--header-title);
+          padding: 0 5px;
+        }
+        p {
+          font-size: $header-font-size;
+          color: var(--header-title);
+        }
+      }
+      button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--header-title);
+        text-decoration: none;
+        text-underline: none;
+        border: 1px solid var(--header-title);
+        background: transparent;
+        border-radius: 18px;
+        padding: 5px 20px;
+        margin: 0 20px;
+        cursor: pointer;
+        .el-icon {
+          padding-right: 10px;
+        }
+      }
+      footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-left: 1px solid var(--header-title);
+        .el-icon {
+          color: var(--header-title);
+          padding: 0 20px;
+          cursor: pointer;
+        }
+        .el-avatar {
+          margin-right: 20px;
+          cursor: pointer;
+        }
+      }
+    }
   }
-}
 }

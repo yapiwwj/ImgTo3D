@@ -61,9 +61,7 @@ const handleActive = (id: number) => {
 <template>
   <div class="container">
     <header>
-      <el-icon>
-        <Search />
-      </el-icon>
+      <el-icon><Search /></el-icon>
       <input type="text" v-model="inputValue" placeholder="搜索更多">
     </header>
     <div class="operation">

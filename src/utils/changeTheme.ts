@@ -1,4 +1,3 @@
-
 export const changeTheme = () => {
   const html = document.documentElement;
   const currentTheme = html.getAttribute('theme');

@@ -2,7 +2,7 @@
 import WaterFall from "@/components/WaterFall.vue";
 import { ref, computed } from "vue";
 import img from "../../assets/images/img4.svg";
-import {RandomColor} from "@/utils/RandomColor.ts";
+import { RandomColor } from "@/utils/RandomColor.ts";
 
 const originalItems = ref([
   {
@@ -56,7 +56,19 @@ const duplicatedItems = computed(() => {
       </p>
     </header>
     <div class="waterfall-box">
-      <water-fall />
+      <water-fall style="background: #fff">
+        <template #layoutPart="{ $avatar, $name, $day }">
+          <footer class="waterfall-item">
+            <div class="left">
+              <img :src="$avatar" alt="" />
+            </div>
+            <div class="right">
+              <h4 class="text">{{ $name }}</h4>
+              <p>{{ $day }}</p>
+            </div>
+          </footer>
+        </template>
+      </water-fall>
     </div>
 
     <!--    card-->

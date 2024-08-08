@@ -7,7 +7,8 @@
     border-bottom: 1px solid var(--aside-border-line-color);
     padding: 30px 0;
 
-    .top, .bottom {
+    .top,
+    .bottom {
       display: flex;
       align-items: center;
       width: 80%;
@@ -55,17 +56,17 @@
         margin-bottom: 150px;
       }
     }
-    div{
+    div {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      span{
+      span {
         color: var(--aside-text-color);
         font-size: $text-font-small-size;
         padding: 20px;
         cursor: pointer;
       }
-      p{
+      p {
         color: var(--aside-text-color);
       }
     }

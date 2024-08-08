@@ -15,6 +15,7 @@
     input {
       width: 93%;
       height: 100%;
+      color: var(--font-color2);
       border-radius: 8px;
       background: var(--background);
       outline: none;
@@ -51,11 +52,11 @@
         margin: 10px;
         padding: 5px 10px;
         cursor: pointer;
-        i{
+        i {
           color: var(--font-color1);
-          padding:0 5px;
+          padding: 0 5px;
         }
-        span{
+        span {
           color: var(--font-color1);
           font-size: $text-font-small-size;
         }
@@ -66,11 +67,11 @@
     }
   }
 }
-.active{
-  i{
+.active {
+  i {
     color: #228aff !important;
   }
-  span{
+  span {
     color: #228aff !important;
   }
 }

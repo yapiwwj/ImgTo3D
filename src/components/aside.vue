@@ -56,7 +56,9 @@ const asideList = ref([
 
 const handleActive = (id: number) => {
   activeIndex.value = id;
-  id <= 1 ? router.push(asideList.value[0][id].path) : router.push(asideList.value[1][id - 2].path);
+  id <= 1
+    ? router.push(asideList.value[0][id].path)
+    : router.push(asideList.value[1][id - 2].path);
 };
 </script>
 
@@ -83,11 +85,12 @@ const handleActive = (id: number) => {
     </header>
     <footer>
       <ul>
-        <li class="bottom"
-            v-for="item2 in asideList[1]"
-            :key="item2.id"
-            :class="{ active: activeIndex === item2.id }"
-            @click="handleActive(item2.id)"
+        <li
+          class="bottom"
+          v-for="item2 in asideList[1]"
+          :key="item2.id"
+          :class="{ active: activeIndex === item2.id }"
+          @click="handleActive(item2.id)"
         >
           <component
             class="icon"

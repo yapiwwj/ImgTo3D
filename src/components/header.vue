@@ -7,18 +7,18 @@ import { Bell, CirclePlus, Operation, Sunny } from "@element-plus/icons-vue";
   <div class="container">
     <ul>
       <li class="left">
-        <el-icon><Operation/></el-icon>
+        <el-icon><Operation /></el-icon>
         <h1>TIFA</h1>
       </li>
       <li class="right">
         <div class="publish">
-          <el-icon size="20"><CirclePlus/></el-icon>
+          <el-icon size="20"><CirclePlus /></el-icon>
           <p>Publish</p>
         </div>
-          <button @click="changeTheme">
-            <el-icon size="18"><Sunny /></el-icon>
-            模式切换
-          </button>
+        <button @click="changeTheme">
+          <el-icon size="18"><Sunny /></el-icon>
+          模式切换
+        </button>
         <footer>
           <el-icon size="20"><Bell /></el-icon>
           <el-avatar :size="30" :src="circleUrl" />
@@ -29,5 +29,5 @@ import { Bell, CirclePlus, Operation, Sunny } from "@element-plus/icons-vue";
 </template>
 
 <style scoped lang="scss">
-@import url('../styles/components/header.scss');
+@import url("../styles/components/header.scss");
 </style>
